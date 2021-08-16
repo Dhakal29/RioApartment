@@ -298,9 +298,9 @@
        
         height:62px;
     }
-    .from-2nd-bg-img{
+    /* .from-2nd-bg-img{
         position:static;
-    }
+    } */
     .second-pg-content{
         top:0;
         right:0;
@@ -1444,6 +1444,9 @@
         margin-bottom:4rem;
         padding:0 2rem;
     }
+    .end{
+        padding:0 2rem;
+    }
     .from-2nd-bg-img img{
         height:100%;
         width:100%;
@@ -1571,7 +1574,7 @@
         margin:0 2rem !important;
     }
     .our-rooms-heading .fa-arrow-left{
-        color: black !important;
+        /* color: black !important; */
         -webkit-text-stroke: 1px white;
         padding-right: 4rem;
         margin-right: 4rem;
