@@ -1,0 +1,1094 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* overflow-x: hidden; */
+    background-color:#e5ebed;
+}
+.rectangle{
+    display: inline-block;
+    width:35px;
+    height:2px;
+    background-color:#ffb730;
+}
+.small-heading{
+    font-family: 'Raleway', sans-serif;
+    font-size:1.7rem;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+.heading-with-image{
+    display:inline-flex;
+    align-items:center;
+    margin-bottom: 2rem;
+}
+.heading-with-image p{
+    padding:0 2rem;
+}
+.lg-heading{
+    font-family: georgia,palatino,'book antiqua','palatino linotype',serif;
+    font-size:6.5rem;
+    color:white;
+    font-weight:400;
+    letter-spacing:3px;
+
+}
+a {
+    text-decoration: none;  
+} 
+ul li{
+    list-style: none !important;
+}
+html{
+    font-size:62.5%;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #6aa3a2;
+}
+.background-color{
+    background-color:#e5ebed;
+}
+.bg-img{
+    position: relative;
+}
+.hg-img{
+    display: block;
+    object-position: center;
+    /* width: 100%; */
+}
+.hg-img-sm, .hg-img-md, .hg-img-lg{
+    display: none;
+}
+header{
+    max-width: 980px;
+    width:100%;
+    margin:0 auto;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+.navbar{
+    padding:3rem 8rem 0 0rem;
+}
+.navbar .nav-items{
+    font-family: 'Raleway', sans-serif;
+    font-size:1.6rem;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-weight:500;
+}
+.links{
+   
+    width:80%;
+}
+.nav-item-links{
+    border-right:1px solid white;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.navbar::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.nav-item-book{
+    width:20%;
+    text-align: right;
+}
+.book{
+    border:1px solid #868686;
+    background-color:#868686;
+    padding:4px 37px 4px 37px;
+    font-size:1.5rem;
+    cursor:pointer;
+    font-family: georgia,palatino,'book antiqua','palatino linotype',serif;
+    color:#f5f5f5;
+    
+}
+.book:hover{
+    background-color:#e5ebed;
+    color:rgb(49, 48, 48);
+    border:none;
+    
+}
+.navbar .nav-item a{
+    color:#dee8ea;
+}
+.nav-items .nav-item{
+    text-transform:capitalize;
+}
+.nav-items .nav-item a:hover{
+    color:rgb(54, 52, 52);
+}
+.first-pg-content{
+    position:absolute;
+    top:20%;
+    left: 50%;
+    transform:translate(-50%,-20%);
+    margin-top:6rem;
+    text-align:center;
+}
+.container{
+    max-width:990px;
+    background-color:white;
+    width:95%;
+    padding-top:2.5rem;
+    margin:0 auto;
+}
+.dates-kids-count-absolute-position{
+    position:absolute;
+    left:0;
+    right:0;
+    top:95%;
+    transform:translateY(-5%);
+}
+.home-top{
+    border:2px solid green;
+}
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+    cursor:pointer;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+label {
+    display: block;
+}
+/* For small devices number */
+.small-devi-num{
+    display:none;
+}
+input {
+    border: 1px solid #e5ebed;
+    background-color: white;
+    width: 100%;
+    height: 34px;
+    padding-left: 7px;
+}
+.inc-dec-btn {
+    visibility: hidden;
+    display: none;
+}
+#see-more-btn{
+    display:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 5px;
+    border-radius:5px;
+    width:60%;
+}
+#apartment-room-arrow{
+    position:absolute;
+    top:3%;
+    left:0%;
+    transform: translate(0%,-2%);
+    font-size:26px;
+    color:#6aa3a2;
+    cursor:pointer;
+    display:none;
+}
+.dates-kids-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:0 10px;
+}
+.dates-kids-count label {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3px;
+    color: #2F2E2E;
+}
+.search {
+    width: 100%;
+    height: 34px;
+    font-size: 18px;
+    background-color: transparent;
+    background-color: #6aa3a2;
+    border: 1px solid #6aa3a2;
+    color: white;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.search:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  letter-spacing:1px
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, -1px, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 1px, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
+.check-in-flex,
+.check-out-flex,
+.adults-flex,
+.kids-flex,
+.click-btn-flex {
+    padding:5px;
+}
+.check-in-flex, .check-out-flex{
+    width:30%;
+}
+.adults-flex, .kids-flex{
+    width:10%;
+}
+.flex-item {
+    background-color: red;
+}
+.click-btn-flex{
+    width:20%;
+    align-self: end;
+    margin-top:auto;
+}
+.title-content{
+    font-family: 'Raleway', sans-serif;
+    margin: 5rem 10rem 6rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title-content .heading-title {
+    color:#9c9c9c;
+    font-size:2.8rem;
+    font-weight:400;
+    margin-bottom:3rem;
+}
+.para-content {
+    color:#8d8d8d;
+    font-size:1.5rem;
+    line-height:21px;
+    margin:3rem 2rem 0rem 2rem;
+}
+.homepage-apartment, .location-box{
+    height:280px;
+}
+.homepage-apartment::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.homepage-text-box-sm-bg{
+    background-color:#6aa3a2;
+    width:30%;
+    height:100%;
+    float:left;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.homepage-text-box-sm-bg h1{
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    font-weight:400;
+    letter-spacing:2px;
+    font-size:2.8rem;
+    margin: 2rem 5rem 3rem 5rem;
+}
+.image-box-lg{
+    float:right;
+    width:70%;
+    height:100%;
+}
+.image-box-lg img, .image-box-sm img{
+    width:100%;
+    display:inline-block;
+    height:100%;
+}
+.image-box-sm{
+    float:left;
+    width:30%;
+    height:100%;
+}
+.homepage-text-box-lg-bg{
+    width:70%;
+    float:right;
+    padding:8rem 10rem;
+    height:100%;
+    font-size:1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    color:#8d8787;
+    line-height:20px;
+    font-family: 'Raleway', sans-serif;
+}
+.book-now{
+    font-family: 'Raleway', sans-serif;
+    color:#6aa3a2;
+    text-transform: uppercase;
+}
+.book-now:hover{
+    color:black;
+}
+.second-container{
+    margin-top:89rem;
+}
+.second-container .container{
+    padding-top:0;
+}
+.location-img{
+    float:left;
+    width:70%;
+    height:100%;
+}
+.location-img img{
+    width:100%;
+    display:inline-block;
+    height:100%;
+}
+.location-title{
+    float:right;
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#6aa3a2;
+    height:100%;
+}
+.location-title h1{
+    letter-spacing:1px;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size:2.8rem;
+    font-weight:400;
+    margin-bottom:3rem;
+}
+.location-para{
+    margin:6rem 21rem;
+    color:#8d8787;
+    line-height:20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.location-para p{
+    margin-bottom: 3rem;
+}
+.camila-tiago{
+    font-family: 'Raleway', sans-serif;
+    background-color:#e5ebed;
+    height:450px;
+}
+.camila-tiago-lg{
+    display:block;
+}
+.camila-tiago-sm{
+    display:none;
+}
+.about-cam-tia{
+    display:flex;
+    flex-direction:column;
+    padding:8rem 5rem;   
+}
+.camila-tiago .about-cam-tia h1{
+    font-size:2.8rem;
+    margin-bottom:3rem;
+    color:white;
+    font-weight:400;
+}
+.camila-tiago .about-cam-tia p{
+    color:white;
+    font-size:1.5rem;
+    line-height:20px;
+    letter-spacing:1px;
+    font-weight:400;
+    margin:3rem 1rem 5rem 0;
+}
+.accordion-link .book-now{
+    font-size:1.5rem;
+    color:white;
+    margin-right: 2rem;
+}
+.accordion-link .book-now:hover{
+    color:black;
+}
+.accordion-link #chevron-right{
+    color:white;
+}
+.couple-img{
+    float:left;
+    width:35%;
+    height:80%;
+}
+.couple-img img{
+    width:100%;
+    height:100%;
+}
+.about-cam-tia{
+    float:right;
+    width:65%;
+    background-color:#6aa3a2;
+    height:100%;
+}
+footer .container{
+    background-color:transparent;
+    display:flex;
+    padding-top:0;
+    padding-bottom:5rem;
+    flex-direction:row;
+    justify-content:space-between;
+    height:auto;
+}
+footer{
+    margin-top:7rem;
+}
+footer h1{
+    font-size:1.8rem;
+    color:#454545;
+    font-weight:400;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3rem;
+}
+footer p{
+    font-size:1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color:#919292;
+    margin-top:3rem;
+    width:77%;
+    letter-spacing:1px;
+    line-height:18px;    
+}
+.contact-us, .follow-us, .subscription{
+    flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+}
+.follow-us .social-media{
+    margin-top:3rem;
+    letter-spacing:10px;
+    font-size:1rem;
+    color:#999999;
+    cursor:pointer;  
+}
+.follow-us .social-media i:hover{
+    color:#6aa3a2;
+}
+.form{
+    margin-top:3rem;
+    display:flex;
+    flex-direction:column;
+}
+.email, .subscribe-btn{
+    width: 100%;
+    height:38px;
+    margin-bottom:3px;
+}
+.email{
+    background-color:transparent;
+    border:1px solid black;
+    padding-left: 3rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+.email:focus{
+    border:2px solid red;
+}
+.email:valid{
+    background-color:#6aa3a2;
+}
+.subscribe-btn{
+    background-color:#868686;
+    font-family: georgia,palatino,'book antiqua','palatino linotype',serif;
+    color:rgb(47,46,46);
+    font-size:16px;
+    font-weight:300;
+    color:white;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+.subscribe-btn:hover{
+    background-color:white;
+    color:#6aa3a2;
+}
+.end{
+    width:90%;
+    max-width:980px;
+    margin:0 auto;
+    height:70px;
+}
+.end a{
+    color:inherit;
+}
+p a:hover{
+    text-decoration:underline;
+}
+/* From second-page-heading */
+.from-2nd-heading{
+    font-family: 'Raleway', sans-serif;
+    font-size:3.8rem;
+    font-weight: normal;
+    letter-spacing:normal;
+    color:#fff;
+    margin-bottom:1rem;
+}
+.second-pg-content{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,50%);
+margin-top: 14rem;
+text-align: center;
+}
+.from-2nd-bg-img{
+   position:fixed;
+}
+.from-2nd-page-absolute-position{
+    position: absolute;
+    left:0;
+    right:0;
+    top:30%;
+    transform:translateY(30%);
+}
+.our-rooms-heading{
+    position:relative;
+    margin:1.5rem 0 2.5rem 0;
+    line-height:normal;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid #e5ebed;
+}
+#rooms-cal{
+    padding:0 !important;
+}
+.our-rooms-heading h1{
+    color:#878787;
+    font-size:2.6rem;
+    font-weight:400;
+    margin-bottom:1rem;
+}
+.apartment-ip{
+    color:black;
+    cursor:pointer;
+}
+.apartment-ip::placeholder{
+    opacity:1;
+    font-size:15px;
+    font-weight: 300;
+}
+.apartment-ip::-webkit-input-placeholder{
+    opacity:1;
+    font-size:15px;
+    font-weight: 300;
+    color:black;
+}
+.rooms{
+    display:flex;
+    height:195px;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.room-pic{
+    width:30%;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+}
+.room-pic:hover .more-info{
+    bottom:0;
+    background-color:black;
+    transition: bottom .2s ease-out;
+}
+
+.more-info{
+    background-color:black;
+    opacity:0.5;
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    position:absolute;
+    bottom:0;
+    bottom:-27px;
+    right:0;
+    font-family: 'Raleway', sans-serif;
+    padding:5px 8px;
+}
+.more-info-left{
+    display:none;
+    color:white;
+}
+.room-pic img{
+    width:100%;
+    height:100%;
+}
+.room-spec{
+    width:56%;
+    padding:1rem 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+.room-spec a{
+    font-size:22px;
+    font-weight:700;
+    color:#868686;
+    margin-bottom: 2rem;
+    margin-left:1rem;
+}
+.room-spec p{
+    color:#868686;
+    word-break:break-word;
+    margin:2rem 0rem 2rem 1rem;
+    font-size:12px;
+}
+.room-spec ul{
+    padding-bottom: 2rem;
+    margin-left:2rem;
+    border-bottom: 1px solid #e5ebed;
+}
+.room-spec ul li{
+    font-size:12px;
+    list-style-type:disc !important;
+    color:#525151; 
+}
+.amenity{
+    display:inline-block;
+    letter-spacing:3px;
+    margin-top:1rem;
+}
+.amenity i{
+    color:#5e5b5b;
+    position: relative;
+    -webkit-text-stroke: 2px white;
+}
+.room-prices{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width:20%;
+    font-family: 'Raleway', sans-serif;
+    color:#868686;
+    padding-top:4rem;
+}
+.room-prices h1{
+    font-size:3.5rem;
+    font-weight:400;
+    margin-bottom:3rem;
+}
+.room-prices span{
+    font-size:1.2rem;
+    font-weight:400;
+    margin-bottom:5px;
+}
+.room-bottom-border{
+    background-color:#e5ebed;
+    height:1px;
+    display:inline-block;
+    margin:4rem 0;
+    width:100%;
+}
+.other-pages-footer{
+    background-color:#e5ebed;
+    margin-top:0;
+}
+.other-pages-footer .container{
+    padding-top:7rem;
+    padding-bottom:5rem;
+}
+ .amenity .tooltip{
+    display:none;
+    font-size:10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:100;
+    color:transparent;
+    text-align: center;
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 32px;
+    z-index: 1; 
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px #868686;
+}
+.amenity :hover .tooltip{
+    color: black;
+    display:block;
+    border:1px solid #e5ebed;
+}
+.qualities .amenity-seemore {
+    color:#6aa3a2;
+    font-size:12px;
+    font-weight:500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor:pointer;
+    display:none;
+}
+
+/* Junior sites, standard rooms, superior rooms single pages */
+#book-now-btn{
+    display:none;
+}
+.mySlides {
+    display: none
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 98%;
+    height: auto;
+    position: relative;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.doted {
+    margin-top:1.5rem;
+    display: flex;
+    margin-bottom:6rem;
+
+}
+.dot {
+    cursor: pointer;
+    height: 48px;
+    width: 58px;
+    margin: 0 4px;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    border: 1px solid #6aa3a2;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.each-room-spec{
+   
+    width:100%;
+}
+.qualities{
+    display: flex;
+    padding-bottom: 3rem;
+    margin-top:5rem;
+    border-bottom: 1px solid #e5ebed ;
+}
+.qualities .amenity{
+    margin:0;
+    width: 70%;
+}
+
+.amenity-left, .amenity-right{
+    width: 50%;
+    margin:0 0 1rem 0;
+}
+.amenity-right{
+    float:right;
+    display:inline-flex;
+    align-items:center;
+}
+.amenity-left{
+    float:left;
+    display:inline-flex;
+    align-items:center;
+}  
+.amenity-left h2, .amenity-right h2{
+    font-family: 'Raleway', sans-serif;
+    margin-left:5px;
+    letter-spacing:1px;
+    font-weight:400;
+    font-size:14px;
+    line-height:normal;
+}
+.prop-desc{
+    display: flex;
+    font-size:16px;
+    line-height: 22px;
+    font-weight: 400;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 15rem;
+}
+.each-room-spec h1, .each-room-spec p{
+    font-family: 'Raleway', sans-serif;
+    color:#2f2e2e;
+}
+.each-room-spec h1{
+    font-size:16px;
+    font-weight:700;
+    padding-top:5px;
+    width:30%;
+  
+}
+.each-room-spec p{
+   
+    font-size:16px;
+    width:70%;
+    line-height:22px;
+    font-weight:400;
+    word-break:break-word;
+}
+.container-for-left-right-margin-rooms::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.img-n-spec{
+    float:left;
+    width:75%;
+}
+.booking-form{
+    width:25%;
+    float:right;
+    padding:3rem 0 1rem 0;
+    border:1px solid #e5ebed;
+}
+.booking-form-about{
+    text-align:left;
+    margin-left:2rem;
+    margin-bottom: 16px;
+    padding-left:1rem;
+    color:#2f2e2e;
+    border-left:1px solid #e5ebed;
+}
+.booking-form-about p{
+    font-family: 'Raleway', sans-serif;
+    font-size:15px;
+}
+.booking-form-about h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 8px 0;
+    font-size:32px;
+}
+.booking-form .dates-kids-count{
+    flex-direction: column;
+}
+.booking-form .dates-kids-count .check-in-flex,.booking-form .dates-kids-count .check-out-flex{
+    width:100%;
+}
+.booking-form .dates-kids-count .adults-flex,
+.booking-form .dates-kids-count .kids-flex{
+    width:100%;
+}
+.booking-form .dates-kids-count .click-btn-flex{
+    width:100%;
+    position:relative;
+}
+.booking-form .dates-kids-count .click-btn-flex .search{
+    font-size:18px;
+    height:40px;
+    
+}
+
+.book-now-tooltip{
+    width:240px;
+    display:none;
+    height:auto;
+    background-color:white;
+    color:black;
+    position:absolute;
+    left:-246px;
+    top:0;
+    font-size:13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:400;
+    padding:8px;
+    text-align: center;
+    border-radius:5px;
+}
+.booking-form .dates-kids-count .click-btn-flex .search:hover ~ .book-now-tooltip{
+    display:block;
+}
+.qualities a{
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+.qualities a:hover{
+    color:#424546;
+}
+/* Rio Page */
+.rio-container-for-left-right-margin{
+    margin:0 10rem; padding-bottom: 1rem;
+}
+.rio-content{
+    display:flex;
+    flex-direction: row;
+    padding-bottom:8rem;    
+    padding-top:2rem;
+}
+.rio-content:nth-child(1){
+    margin-top:6rem;
+}
+.rio-content-heading{
+    width:35%;    
+}
+.rio-content-heading h1{
+    font-size:2.8rem;
+    font-family: 'Raleway', sans-serif;
+    color:#868686;
+    letter-spacing:1px;
+    line-height:3.6rem;
+    font-weight:400;
+}
+.rio-content-para{
+    width:65%;
+}
+.rio-content-para p{
+    font-size:1.6rem;
+    font-family: 'Raleway', sans-serif;
+    color:#949494;
+    line-height:2.2rem;
+    font-weight:400;
+    margin-bottom:4rem;
+}
+.rio-content-para a{
+    font-size:1.4rem;
+    font-weight:400;
+    text-transform:inherit;
+}
+.christ-img{
+    margin-bottom:8rem;
+}
+.heading-only{
+    margin-bottom: 2.5rem;
+}
+.contact-container-for-left-right-margin{
+    margin:0 10rem
+}
+.address{
+    margin-top:5rem;
+}
+.address p{
+    font-size:1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color:#868686;
+}
+.form-name, .form-email, .form-email{
+    width:100%;
+    height:35px;
+    margin-bottom:10px;
+}
+.form-email:valid{
+    background-color:#6aa3a2;
+}
+.form-name, .form-email, .form-message{
+    border:1px solid #e5ebed;
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+    padding:7px 0 0 12px;
+    color:#626566;
+    background-color:#e5ebed;
+}
+.form-message{
+    width:100%;
+    height:140px;
+    resize:none;
+}
+.form-submit{
+    margin-top:5px;
+    background-color:none;
+    float:right;
+    text-align:right;
+    width:65px;
+    border:none;
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+    cursor:pointer;
+    color:#6aa3a2;
+}
+.form-submit:hover{
+    color:black;
+}
+.maps{
+    width:65%;
+    height:auto;
+}
+.maps iframe{
+    height:100%;
+    width:100%;
+}

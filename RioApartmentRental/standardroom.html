@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <script src="https://kit.fontawesome.com/196fbcae52.js" crossorigin="anonymous"></script>
+    <title>Standard Room</title>
+</head>
+
+<body>
+    <div class="bg-img">
+        <div class="from-2nd-bg-img">
+            <img class="hg-img"  src="img/our-apartment-bg.jpg"
+            style="object-fit:automatically; object-position: center; vertical-align:bottom;">
+        <img class="hg-img-md" src="img/our-apartment-bg-md.jpg" style=" object-position: center;">
+        <img class="hg-img-sm" src="img/our-apartment-bg-sm.jpg" style=" object-position: center;">
+        <img class="hg-img-lg" src="img/our-apartment-bg-lg.jpg" style=" object-position: center;">
+
+        </div>
+        <header>
+            <nav class="navbar">
+                <div class="nav-items">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="links">
+                        <div class="nav-item-links">
+
+                            <div class="nav-item">
+                                <a href="index.html">Home</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="apartment.html">Our Apartment</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="rio.html">Rio</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item-book">
+                        <a href="apartment.html" class="book" type="submit">Book</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="second-pg-content">
+            <h1 class="from-2nd-heading">Our Apartment</h1>
+            <div class="heading-with-image">
+                <img src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_60,h_6,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+                    alt="" style="width: 60px; height: 10px; object-fit:contain; object-position: center center;">
+            </div>
+        </div>
+        <div class="from-2nd-page-absolute-position">
+            <div class="container">
+                <div class="container-for-left-right-margin-rooms" style="margin:0 3rem;">
+                    <div class="our-rooms-heading">
+                        <h1><a href="apartment.html"><i class="fas fa-arrow-left"
+                                    style="color:#6aa3a2; padding-right:3rem; margin-right:2rem; font-size:22px; border-right:1px solid #e5ebed;"></i></a>Standard
+                            Room</h1>
+                    </div>
+                    <div id="each_img_room_spec" class="img-n-spec">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="img/standard-room/standard-room-1.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="img/standard-room/standard-room-2.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="img/standard-room/standard-room-3.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="img/standard-room/standard-room-4.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides fade">
+                                <img src="img/standard-room/standard-room-5.jpg" style="width:100%">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left fa-2x"
+                                    style="font-size:25px;"></i></a>
+                            <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right fa-2x"
+                                    style="font-size:25px;"></i></a>
+                        </div>
+                        <input class="search" id="book-now-btn" type="submit" onclick="bookNow()" value="Check Dates">
+                        <div class="doted">
+                            <span class="dot" onclick="currentSlide(1)"><img
+                                    src="img/standard-room/standard-room-sm-1.jpg"
+                                    style="width:100%; height:100%;"></span>
+                            <span class="dot" onclick="currentSlide(2)"><img
+                                    src="img/standard-room/standard-room-sm-2.jpg"
+                                    style="width:100%; height:100%;"></span>
+                            <span class="dot" onclick="currentSlide(3)"><img
+                                    src="img/standard-room/standard-room-sm-3.jpg"
+                                    style="width:100%; height:100%;"></span>
+                            <span class="dot" onclick="currentSlide(4)"><img
+                                    src="img/standard-room/standard-room-sm-4.jpg"
+                                    style="width:100%; height:100%;"></span>
+                            <span class="dot" onclick="currentSlide(5)"><img
+                                    src="img/standard-room/standard-room-sm-5.jpg"
+                                    style="width:100%; height:100%;"></span>
+                        </div>
+                        <div class="each-room-spec">
+                            <div class="qualities">
+                                <h1>Properties:</h1>
+                                <div class="prop-desc">
+                                    <span>Accommodates: 2<br>Beds: 2 Double(s)</span>
+                                    <span>Size: 260 sq ft</span>
+                                </div>
+                            </div>
+                            <div class="qualities">
+                                <h1>More Info:</h1>
+                                <p>
+
+
+                                    Functional and comfortable. Sit back and enjoy one of our brand new 280 square foot
+                                    Standard Rooms. Complete with courtyard views, stylish decor and natural light,
+                                    our Standard Rooms are the perfect combination of function and comfort. Ideally
+                                    suited for today’s business or leisure travelers.
+                                </p>
+                            </div>
+                            <div class="qualities">
+                                <h1>Amenities</h1>
+                                <div class="amenity">
+                                    <div class="amenity-left"><i class="fas fa-dharmachakra fa-3x "></i>
+                                        <h2 class="amenity-h2">A/C</h2>
+                                    </div>
+                                    <div class="amenity-right"><i class="fas fa-wifi fa-3x "></i>
+                                        <h2 class="amenity-h2">WiFi</h2>
+                                    </div>
+                                    <div class="amenity-left"><i class="fas fa-tv fa-3x "></i>
+                                        <h2 class="amenity-h2">TV</h2>
+                                    </div>
+                                    <div class="amenity-right"><i class="fas fa-boxes fa-3x "></i>
+                                        <h2 class="amenity-h2">Safe</h2>
+                                    </div>
+                                    <div class="amenity-left"><i class="fas fa-glass-cheers fa-3x "></i>
+                                        <h2 class="amenity-h2">Minibar</h2>
+                                    </div>
+                                    <div class="amenity-right"><i class="fas fa-phone-alt fa-3x "></i>
+                                        <h2 class="amenity-h2">Phone</h2>
+                                    </div>
+                                    <div class="amenity-left"><i class="fas fa-utensil-spoon fa-3x "></i>
+                                        <h2 class="amenity-h2">Kitchen</h2>
+                                    </div>
+                                    <a class="amenity-seemore" id="amenity_seemore_id" onclick="amenity_more()">Show
+                                        More </a>
+                                </div>
+                            </div>
+                            <div class="qualities">
+                                <h1>Terms:</h1>
+                                <a href="#">Read Our Policies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="booking-form">
+                        <div class="booking-form-about">
+                            <p>From</p>
+                            <h1>$150</h1>
+                            <p>Per Night</p>
+                        </div>
+                        <div class="dates-kids-count">
+                            <div class="check-in-flex">
+                                <input placeholder="Check-In" class="apartment-ip" type="text"
+                                    onfocus="(this.type='date')" id="date" required>
+                            </div>
+                            <div class="check-out-flex">
+                                <input placeholder="Check-Out" class="apartment-ip" type="text"
+                                    onfocus="(this.type='date')" id="date" required>
+                            </div>
+                            <div class="adults-flex">
+                                <input id=demoInput_Adult placeholder="Adults" class="apartment-ip" type=number min=1
+                                    max=100 required>
+                                <button class="inc-dec-btn" onclick="increment()"></button>
+                                <button class="inc-dec-btn" onclick="decrement()"></button>
+                            </div>
+                            <div class="kids-flex">
+                                <input id=demoInput_Adult placeholder="Kids" class="apartment-ip" type=number min=0
+                                    max=100>
+                                <button class="inc-dec-btn" onclick="increment()"></button>
+                                <button class="inc-dec-btn" onclick="decrement()"></button>
+                            </div>
+                            <div class="click-btn-flex">
+                                <input class="search" type="submit" value="Book Now">
+                                <div class="book-now-tooltip">Please Contact the hotel directly to book your room</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="other-pages-footer">
+                <div class="container">
+                    <div class="contact-us">
+                        <h1>Contact Us</h1>
+                        <span class="rectangle"></span>
+                        <p>Ask us anything! We’re here to answer any questions you have.<br><br>
+                            Email: info@mysite.com</p>
+                    </div>
+                    <div class="follow-us">
+                        <h1>Follow Us</h1>
+                        <span class="rectangle"></span>
+                        <div class="social-media">
+                            <i class="fas fa-plane-departure fa-3x"></i>
+                            <i class="fab fa-facebook-f fa-3x"></i>
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <h1>Subscribe for Updates & Offers</h1>
+                        <span class="rectangle"></span>
+                        <form class="form">
+                            <input class="email" type="email" placeholder="Enter your email here*"
+                                pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$" required>
+                            <input type="submit" value="Subscribe Now" class="subscribe-btn">
+                        </form>
+                    </div>
+                </div>
+                <p class="end">© Be my guest in Rio. Proudly created with <a href="https://www.wix.com/"
+                        target="blank">Wix.com</a></p>
+                        <script type="text/javascript" src="js/script.js"></script>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

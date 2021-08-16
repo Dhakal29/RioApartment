@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <script src="https://kit.fontawesome.com/196fbcae52.js" crossorigin="anonymous"></script>
+    <title>Rio Apartment</title>
+</head>
+
+<body>
+    <div class="bg-img">
+        <img class="hg-img" src="img/homepage.jpg">
+        <img class="hg-img-sm" src="img/homepage-sm.jpg">
+        <img class="hg-img-md" src="img/homepage-md.jpg">
+        <img class="hg-img-lg" src="img/homepage-lg.jpg">
+
+        <header>
+            <nav class="navbar">
+                <div class="nav-items">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="links">
+                        <div class="nav-item-links">
+
+                            <div class="nav-item">
+                                <a href="index.html">Home</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="apartment.html">Our Apartment</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="rio.html">Rio</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item-book">
+                        <a href="apartment.html" class="book" type="submit">Book</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="first-pg-content">
+            <div class="heading-with-image">
+                <img src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_60,h_6,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+                    alt="" style="width: 60px; height: 10px; object-fit: contain; object-position: center center;">
+                <p class="small-heading">Be My guest</p>
+                <img src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_60,h_6,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+                    alt="" style="width: 60px; height: 10px; object-fit: contain; object-position: center center;">
+            </div>
+            <h1 class="lg-heading">Welcome to Rio</h1>
+        </div>
+        <div class="dates-kids-count-absolute-position">
+            <div class="container">
+                <div class="dates-kids-count">
+                    <div class="check-in-flex">
+                        <label for="dateofbirth">Check In</label>
+                        <input class="in-out-form" type="date" name="dateofbirth" id="dateofbirth">
+                    </div>
+                    <div class="check-out-flex">
+                        <label for="dateofbirth">Check Out</label>
+                        <input class="in-out-form" type="date" name="dateofbirth" id="dateofbirth">
+                    </div>
+                    <div class="adults-flex">
+                        <label>Adults</label>
+                        <input id=demoInput_Addivt class="addivt-form" type=number min=1 max=100>
+                        <button class="inc-dec-btn" onclick="increment()"></button>
+                        <button class="inc-dec-btn" onclick="decrement()"></button>
+                        <div class="small-devi-num">
+                            <div class="sm-dev-adult">
+                                <h1>Adults</h1>
+                            </div>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="plus">-</button>
+                                <input class="quantity" min="1" name="quantity" value="1" type="number">
+                                <button
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kids-flex">
+                        <label>Kids</label>
+                        <input id=demoInput_Kid class="kid-form" type=number min=0 max=10>
+                        <button class="inc-dec-btn" onclick="increment()"></button>
+                        <button class="inc-dec-btn" onclick="decrement()"></button>
+                        <div class="small-devi-num">
+                            <div class="sm-dev-adult">
+                                <h1>Kids</h1>
+                            </div>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="plus">-</button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="click-btn-flex">
+                        <input class="search" type="submit" value="Search">
+                    </div>
+                </div>
+                <div class="title-content">
+                    <h1 class="heading-title">A Home in the Heart of the city</h1>
+                    <span class="rectangle"></span>
+                    <p class="para-content">Stay in a beautiful highrise in Ipanema just off the beach close to many
+                        world-class cafes and restaurants. Enjoy Bossa Nova with a cold beer!</p>
+                </div>
+                <div class="homepage-apartment">
+                    <div class="homepage-text-box-sm-bg">
+                        <h1>Our Apartment</h1>
+                        <span class="rectangle"></span>
+                    </div>
+                    <div class="image-box-lg">
+                        <img src="img/our-apartment.jpg">
+                    </div>
+                </div>
+                <div class="homepage-apartment">
+                    <div class="image-box-sm">
+                        <img src="img/our-apartment-2.jpg">
+                    </div>
+                    <div class="homepage-text-box-lg-bg">
+                        <p>The apartment is spacious with high ceilings, large windows, an open balcony and a beautiful
+                            view
+                            of the beach. Stay cool with central A/C and wind-down comfortably in the queen sized
+                            bedroom.
+                        </p>
+                        <a href="apartment.html" class="book-now">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="container">
+            <div class="location-box">
+                <div class="location-img">
+                    <img src="img/location.jpg">
+                </div>
+                <div class="location-title">
+                    <h1>Location</h1>
+                    <span class="rectangle"></span>
+                </div>
+            </div>
+            <div class="location-para">
+                <p>Conveniently located just opposite Leblon Beach in Ipanema, our apartment will sweep you into the
+                    charm and excitements of Rio! Dine at one of our neighborhood’s many world-renowned restaurants,
+                    enjoy fresh-squeezed juices from one of the colourful stalls along the beach, and don’t miss
+                    live bossy-nova show in one of the local bars.
+                </p>
+                <a href="contact.html#ref_map" class="book-now">view map</a>
+            </div>
+
+            <div class="camila-tiago">
+                <div class="couple-img">
+                    <img class="camila-tiago-lg" src="img/camila-tiago.jpg">
+                    <img class="camila-tiago-sm" src="img/camila-tiago-sm.jpg">
+                </div>
+                <div class="about-cam-tia">
+                    <h1>About Camila & Tiago</h1>
+                    <span class="rectangle"></span>
+                    <p>Hi, my name is Camila and I’m a nutritionist from the south of Brazil. I moved to the
+                        beautiful Ipanema neighborhood two years ago with my husband, Tiago. We live in a homie
+                        highrise just off the Leblon Beach, but in the summer we travel!</p>
+                    <div class="accordion-link">
+                        <a href="apartment.html" class="book-now">Stay with us</a>
+                        <a href="apartment.html" id="chevron-right"><i class="fas fa-chevron-right fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+                <span class="rectangle"></span>
+                <p>Ask us anything! We’re here to answer any questions you have.<br><br>
+                    Email: info@mysite.com</p>
+            </div>
+            <div class="follow-us">
+                <h1>Follow Us</h1>
+                <span class="rectangle"></span>
+                <div class="social-media">
+                    <i class="fas fa-plane-departure fa-3x"></i>
+                    <i class="fab fa-facebook-f fa-3x"></i>
+                    <i class="fab fa-instagram fa-3x"></i>
+                </div>
+            </div>
+            <div class="subscription">
+                <h1>Subscribe for Updates & Offers</h1>
+                <span class="rectangle"></span>
+                <form class="form">
+                    <input class="email" type="email" pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$"
+                        placeholder="Enter your email here*" required>
+                    <input type="submit" value="Subscribe Now" class="subscribe-btn">
+                </form>
+            </div>
+        </div>
+        <p class="end">© Be my guest in Rio. Proudly created with <a href="https://www.wix.com/"
+                target="blank">Wix.com</a></p>
+        <script type="text/javascript" src="js/script.js"></script>
+    </footer>
+</body>
+
+</html>

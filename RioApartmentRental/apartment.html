@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <script src="https://kit.fontawesome.com/196fbcae52.js" crossorigin="anonymous"></script>
+    <title>Our Apartment</title>
+</head>
+
+<body>
+    <div class="bg-img">
+        <div class="from-2nd-bg-img">
+
+            <img class="hg-img" src="img/our-apartment-bg.jpg" >
+            <img class="hg-img-sm" src="img/our-apartment-bg-sm.jpg" style=" object-position: center;">
+            <img class="hg-img-md" src="img/our-apartment-bg-md.jpg" style=" object-position: center;">
+            <img class="hg-img-lg" src="img/our-apartment-bg-lg.jpg" >
+
+        </div>
+        <header>
+            <nav class="navbar">
+                <div class="nav-items">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="links">
+                        <div class="nav-item-links">
+
+                            <div class="nav-item">
+                                <a href="index.html">Home</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="apartment.html">Our Apartment</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="rio.html">Rio</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item-book">
+                        <a href="apartment.html" class="book" type="submit">Book</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="second-pg-content">
+            <h1 class="from-2nd-heading">Our Apartment</h1>
+            <div class="heading-with-image">
+                <img src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_60,h_6,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+                    alt="" style="width: 60px; height: 10px; object-fit:contain; object-position: center center;">
+            </div>
+        </div>
+        <div class="from-2nd-page-absolute-position">
+            <div class="container">
+                <div class="container-for-left-right-margin" style="margin:0 5rem;">
+                    <div class="our-rooms-heading">
+                        <h1>Our Rooms</h1>
+                        <i onclick="apartroomBack()" id="apartment-room-arrow"
+                            class="fas fa-long-arrow-alt-left fa-3x"></i>
+                    </div>
+                    <input class="search" id="see-more-btn" type="submit" onclick="hideshow()" value="Select Dates">
+                    <div id="rooms-cal" class="dates-kids-count">
+                        <div class="check-in-flex">
+                            <input placeholder="Check-In" class="apartment-ip" type="text" onfocus="(this.type='date')"
+                                id="date1">
+                        </div>
+                        <div class="check-out-flex">
+                            <input placeholder="Check-Out" class="apartment-ip" type="text" onfocus="(this.type='date')"
+                                id="date2">
+                        </div>
+                        <div class="adults-flex">
+                            <input id=demoInput_Adult placeholder="Adults" class="apartment-ip" type=number min=1
+                                max=100>
+                            <button class="inc-dec-btn" onclick="increment()"></button>
+                            <button class="inc-dec-btn" onclick="decrement()"></button>
+                            <div class="small-devi-num">
+                                <div class="sm-dev-adult">
+                                    <h1>Adults</h1>
+                                </div>
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                        class="plus">-</button>
+                                    <input class="quantity" min="1" name="quantity" value="1" type="number">
+                                    <button
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kids-flex">
+                            <input id=demoInput_Adult placeholder="Kids" class="apartment-ip" type=number min=0 max=100>
+                            <button class="inc-dec-btn" onclick="increment()"></button>
+                            <button class="inc-dec-btn" onclick="decrement()"></button>
+                            <div class="small-devi-num">
+                                <div class="sm-dev-adult">
+                                    <h1>Kids</h1>
+                                </div>
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                        class="plus">-</button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="click-btn-flex">
+                            <input class="search" type="submit" value="Search">
+                        </div>
+                    </div>
+
+                    <span class="room-bottom-border"></span>
+
+                    <div id="room1" class="rooms">
+                        <div class="room-pic">
+                            <a href="juniorsite.html">
+
+                                <img src="img/our-rooms-1.jpg">
+                                <span class="more-info">More Info</span>
+                            </a>
+                        </div>
+                        <div class="room-spec">
+                            <a href="juniorsite.html">Junior Suite</a>
+                            <p>Our Junior Suites offer breathtaking views of the city skyline.</p>
+                            <ul>
+                                <li>Size 260 sq ft</li>
+                                <li>Beds:2 Double(s)</li>
+                            </ul>
+                            <div class="amenity">
+                                <i class="fas fa-dharmachakra fa-3x"><span class="tooltip">A/C</span></i>
+                                <i class="fas fa-wifi fa-3x"><span class="tooltip">Wifi</span></i>
+                                <i class="fas fa-tv fa-3x"><span class="tooltip">T/V</span></i>
+                                <i class="fas fa-boxes fa-3x"><span class="tooltip">Safe</span></i>
+                                <i class="fas fa-glass-cheers fa-3x"><span class="tooltip">Minibar</span></i>
+                                <i class="fas fa-phone-alt fa-3x"><span class="tooltip">Phone</span></i>
+                                <i class="fas fa-utensil-spoon fa-3x"><span class="tooltip">Kitchen</span></i>
+                                <i class="fas fa-chess-board fa-3x"><span class="tooltip">Towels</span></i>
+                            </div>
+                        </div>
+                        <div class="room-prices">
+                            <span>From</span>
+                            <h1>$250</h1>
+                            <input class="search" type="submit" onclick="location.href='juniorsite.html'"
+                                value="More Info">
+                            <span class="more-info-left" onclick="location.href='juniorsite.html'"><i
+                                    class="fas fa-chevron-right "></i></span>
+
+                        </div>
+                    </div>
+                    <span class="room-bottom-border"></span>
+                    <div class="rooms">
+                        <div class="room-pic">
+                            <a href="standardroom.html">
+
+                                <img src="img/our-rooms-2.jpg">
+                                <span class="more-info">More Info</span>
+                            </a>
+                        </div>
+                        <div class="room-spec">
+                            <a href="standardroom.html">Standard Room</a>
+                            <p>Our Standard Rooms are the of perfect function and comfort.</p>
+                            <ul>
+                                <li> Size: 230 sq ft </li>
+                                <li> Beds: 1 Double(s) </li>
+                            </ul>
+                            <div class="amenity">
+                                <i class="fas fa-dharmachakra fa-3x"><span class="tooltip">A/C</span></i>
+                                <i class="fas fa-wifi fa-3x"><span class="tooltip">Wifi</span></i>
+                                <i class="fas fa-tv fa-3x"><span class="tooltip">T/V</span></i>
+                                <i class="fas fa-boxes fa-3x"><span class="tooltip">Safe</span></i>
+                                <i class="fas fa-glass-cheers fa-3x"><span class="tooltip">Minibar</span></i>
+                                <i class="fas fa-phone-alt fa-3x"><span class="tooltip">Phone</span></i>
+                                <i class="fas fa-utensil-spoon fa-3x"><span class="tooltip">Kitchen</span></i>
+                                <i class="fas fa-bath fa-3x"><span class="tooltip">Shower</span></i>
+
+                            </div>
+                        </div>
+                        <div class="room-prices">
+                            <span>From</span>
+                            <h1>$150</h1>
+                            <input class="search" type="submit" onclick="location.href='standardroom.html'"
+                                value="More Info">
+                            <span class="more-info-left" onclick="location.href='juniorsite.html'"><i
+                                    class="fas fa-chevron-right"></i></span>
+
+                        </div>
+                    </div>
+                    <span class="room-bottom-border"></span>
+                    <div class="rooms">
+                        <div class="room-pic">
+                            <a href="superiorroom.html">
+                                <img src="img/our-rooms-3.jpg">
+                                <span class="more-info">More Info</span>
+
+                            </a>
+                        </div>
+                        <div class="room-spec">
+                            <a href="superiorroom.html">Superior Room</a>
+                            <p>Our Superior Rooms are comfortable, roomy and elegant.</p>
+                            <ul>
+                                <li> Size: 280 sq ft </li>
+                                <li> Beds: 1 King(s) </li>
+                            </ul>
+                            <div class="amenity">
+                                <i class="fas fa-dharmachakra fa-3x"><span class="tooltip">A/C</span></i>
+                                <i class="fas fa-wifi fa-3x"><span class="tooltip">Wifi</span></i>
+                                <i class="fas fa-tv fa-3x"><span class="tooltip">T/V</span></i>
+                                <i class="fas fa-boxes fa-3x"><span class="tooltip">Safe</span></i>
+                                <i class="fas fa-glass-cheers fa-3x"><span class="tooltip">Minibar</span></i>
+                                <i class="fas fa-phone-alt fa-3x"><span class="tooltip">Phone</span></i>
+                                <i class="fas fa-utensil-spoon fa-3x"><span class="tooltip">Kitchen</span></i>
+                                <i class="fas fa-globe fa-3x"><span class="tooltip">Workspace</span></i>
+                                <i class="fas fa-bath fa-3x"><span class="tooltip">Shower</span></i>
+
+                            </div>
+                        </div>
+                        <div class="room-prices">
+                            <span>From</span>
+                            <h1>$350</h1>
+                            <input class="search" type="submit" onclick="location.href='superiorroom.html'"
+                                value="More Info">
+                            <span class="more-info-left" onclick="location.href='juniorsite.html'"><i
+                                    class="fas fa-chevron-right"></i></span>
+
+                        </div>
+                    </div>
+                    <span class="room-bottom-border"></span>
+                </div>
+            </div>
+            <footer class="other-pages-footer">
+                <div class="container">
+                    <div class="contact-us">
+                        <h1>Contact Us</h1>
+                        <span class="rectangle"></span>
+                        <p>Ask us anything! We’re here to answer any questions you have.<br><br>
+                            Email: info@mysite.com</p>
+                    </div>
+                    <div class="follow-us">
+                        <h1>Follow Us</h1>
+                        <span class="rectangle"></span>
+                        <div class="social-media">
+                            <i class="fas fa-plane-departure fa-3x"></i>
+                            <i class="fab fa-facebook-f fa-3x"></i>
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="subscription">
+                        <h1>Subscribe for Updates & Offers</h1>
+                        <span class="rectangle"></span>
+                        <form class="form">
+                            <input class="email" type="email" placeholder="Enter your email here*"
+                                pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$" required>
+                            <input type="submit" value="Subscribe Now" class="subscribe-btn">
+                        </form>
+                    </div>
+                </div>
+                <p class="end">© Be my guest in Rio. Proudly created with <a href="https://www.wix.com/"
+                        target="blank">Wix.com</a></p>
+                <script type="text/javascript" src="js/script.js"></script>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
