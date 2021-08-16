@@ -421,7 +421,7 @@
     .room-prices{
         z-index: 5;
         position: absolute;
-        right: 12%;
+        right: 6%;
         bottom: 0;
         margin-bottom:6px;
         flex-direction:row;
@@ -798,7 +798,7 @@
         font-size:2.6rem;
     }
     .para-content{
-        font-size:1.6rem;
+        font-size:1.7rem;
         margin:3rem 0 0 0;
     }
     .homepage-apartment{
@@ -847,7 +847,7 @@
     }
     .location-para{
         margin:47px 2rem;
-        font-size:1.6rem;
+        font-size:1.7rem;
     }
     .camila-tiago{
         height:auto;
@@ -863,9 +863,11 @@
     }
     .camila-tiago .about-cam-tia p{
         margin:3rem 0 4rem 0;
+        font-size:1.7rem;
     }
     .accordion-link .book-now{
         margin-right: 2rem;
+        font-size:1.7rem;
     }
     .couple-img{
         float:none;
@@ -883,6 +885,7 @@
     }
     footer p{
         margin-top:2rem;
+        font-size:1.7rem;
         width:100%;
     }
     footer h1{

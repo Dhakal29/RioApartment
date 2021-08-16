@@ -545,7 +545,7 @@ footer p{
     color:#6aa3a2;
 }
 .end{
-    width:90%;
+    width:100%;
     max-width:980px;
     margin:0 auto;
     height:70px;
@@ -606,14 +606,38 @@ text-align: center;
 .apartment-ip::placeholder{
     opacity:1;
     font-size:15px;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 .apartment-ip::-webkit-input-placeholder{
     opacity:1;
     font-size:15px;
-    font-weight: 300;
+    /* font-weight: 300; */
     color:black;
 }
+.apartment-ip::-webkit-input-placeholder {
+    opacity:1;
+    font-size:15px;
+    /* font-weight: 300; */
+    color:black;
+}
+
+.apartment-ip::-moz-placeholder {
+    opacity:1;
+    font-size:15px;
+    color:black;
+}
+
+.apartment-ip::-ms-placeholder {
+    opacity:1;
+    font-size:15px;
+    color:black;
+}
+
+
+
+
+
+
 .rooms{
     display:flex;
     height:195px;
