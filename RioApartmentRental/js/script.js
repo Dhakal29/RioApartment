@@ -1,3 +1,5 @@
+
+
 function increment() {
     document.getElementById('demoInput_Adult').stepUp();
  }
@@ -118,4 +120,5 @@ function amenity_more(){
 
     }
 }  
+
 

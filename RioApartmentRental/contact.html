@@ -9,142 +9,141 @@
     <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <script src="https://kit.fontawesome.com/196fbcae52.js" crossorigin="anonymous"></script>
+    
     <title>Contact Us</title>
 </head>
 
 <body>
-    <div class="bg-img">
-        <div class="from-2nd-bg-img">
-
-            <img class="hg-img" src="img/contact-bg.jpg"
-                style="object-fit:automatically; object-position: center; vertical-align:bottom;">
-            <img class="hg-img-md" src="img/contact-bg-md.jpg">
-            <img class="hg-img-sm" src="img/contact-bg-sm.jpg">
-            <img class="hg-img-lg" src="img/contact-bg-lg.jpg">
-
-        </div>
-        <header>
-            <nav class="navbar">
-                <div class="nav-items">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <div class="links">
-                        <div class="nav-item-links">
-
-                            <div class="nav-item">
-                                <a href="index.html">Home</a>
-                            </div>
-                            <div class="nav-item">
-                                <a href="apartment.html">Our Apartment</a>
-                            </div>
-                            <div class="nav-item">
-                                <a href="rio.html">Rio</a>
-                            </div>
-                            <div class="nav-item">
-                                <a href="contact.html">Contact</a>
+    <main id="swup" class="transition-fade">
+        <div class="bg-img">
+            <div class="from-2nd-bg-img">
+                <img class="hg-img" src="img/contact-bg.jpg"
+                    style="object-fit:automatically; object-position: center; vertical-align:bottom;">
+                <img class="hg-img-md" src="img/contact-bg-md.jpg">
+                <img class="hg-img-sm" src="img/contact-bg-sm.jpg">
+                <img class="hg-img-lg" src="img/contact-bg-lg.jpg"> 
+            </div>
+            <header>
+                <nav class="navbar">
+                    <div class="nav-items">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="links">
+                            <div class="nav-item-links">
+                                <div class="nav-item">
+                                    <a   href="/index.html">Home</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a  href="/apartment.html">Our Apartment</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a  href="/rio.html">Rio</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a  href="/contact.html">Contact</a>
+                                </div>
                             </div>
                         </div>
+                        <div class="nav-item-book">
+                            <a href="/apartment.html" class="book" type="submit">Book</a>
+                        </div>
                     </div>
-                    <div class="nav-item-book">
-                        <a href="apartment.html" class="book" type="submit">Book</a>
+                </nav>
+            </header>
+            <div class="second-pg-content">
+                <h1 class="from-2nd-heading">Contact Us</h1>
+                <div class="heading-with-image">
+                    <img src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_60,h_6,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+                        alt="" style="width: 60px; height: 10px; object-fit:contain; object-position: center center;">
+                </div>
+            </div>
+            <div class="from-2nd-page-absolute-position">
+                <div class="container">
+                    <div class="contact-container-for-left-right-margin">
+                        <div class="rio-content">
+                            <div class="rio-content-heading">
+                                <div class="heading-only">
+                                    <h1>Ask Us</h1>
+                                    <h1>Anything</h1>
+                                </div>
+                                <span class="rectangle"></span>
+                            </div>
+                            <div class="rio-content-para">
+                                <form class="contact-form">
+                                    <input type="text" class="form-name" placeholder="Name" required maxlength="40">
+                                    <input type="text" class="form-email" placeholder="Email"
+                                        pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$" required maxlength="45" required>
+                                    <textarea type="text" class="form-message" placeholder="Type your message here"
+                                        maxlength="1000"></textarea>
+                                    <input type="submit" value="Submit" class="form-submit">
+                                </form>
+                            </div>
+                        </div>
+                        <div id="ref_map" class="rio-content">
+                            <div class="rio-content-heading">
+                                <div class="heading-only">
+                                    <h1>How to</h1>
+                                    <h1>Get Here</h1>
+                                </div>
+                                <span class="rectangle"></span>
+                                <div class="address">
+                                    <p>R. Frame de Morá </p>
+                                    <p>Floor 6</p>
+                                    <p>Rio de Janeiro - Ipanema </p>
+                                    <p>Cell: 123-456-7890</p>
+                                </div>
+                            </div>
+                            <div class="maps">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386.3906553152804!2d-43.271361465535676!3d-22.876896815049037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c4099af3559%3A0x21bf20c3a6aa337b!2sHotel%20ibis%20Rio%20de%20Janeiro%20Nova%20America!5e0!3m2!1sen!2snp!4v1628676158735!5m2!1sen!2snp"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+                            </div>
+                        </div>  
                     </div>
                 </div>
-            </nav>
-        </header>
-        <div class="second-pg-content">
-            <h1 class="from-2nd-heading">Contact Us</h1>
-            <div class="heading-with-image">
-                <img src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_60,h_6,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
-                    alt="" style="width: 60px; height: 10px; object-fit:contain; object-position: center center;">
-            </div>
-        </div>
-        <div class="from-2nd-page-absolute-position">
-            <div class="container">
-                <div class="contact-container-for-left-right-margin">
-                    <div class="rio-content">
-                        <div class="rio-content-heading">
-                            <div class="heading-only">
-                                <h1>Ask Us</h1>
-                                <h1>Anything</h1>
-                            </div>
+                <footer class="other-pages-footer">
+                    <div class="container">
+                        <div class="contact-us">
+                            <h1>Contact Us</h1>
                             <span class="rectangle"></span>
+                            <p>Ask us anything! We’re here to answer any questions you have.<br><br>
+                                Email: info@mysite.com</p>
                         </div>
-                        <div class="rio-content-para">
-                            <form class="contact-form">
-                                <input type="text" class="form-name" placeholder="Name" required maxlength="40">
-                                <input type="text" class="form-email" placeholder="Email"
-                                    pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$" required maxlength="45" required>
-                                <textarea type="text" class="form-message" placeholder="Type your message here"
-                                    maxlength="1000"></textarea>
-                                <input type="submit" value="Submit" class="form-submit">
+                        <div class="follow-us">
+                            <h1>Follow Us</h1>
+                            <span class="rectangle"></span>
+                            <div class="social-media">
+                                <i class="fas fa-plane-departure fa-3x"></i>
+                                <i class="fab fa-facebook-f fa-3x"></i>
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="subscription">
+                            <h1>Subscribe for Updates & Offers</h1>
+                            <span class="rectangle"></span>
+                            <form class="form">
+                                <input class="email" type="email" pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$"
+                                    placeholder="Enter your email here*" required>
+                                <input type="submit" value="Subscribe Now" class="subscribe-btn">
                             </form>
                         </div>
                     </div>
-                    <div id="ref_map" class="rio-content">
-                        <div class="rio-content-heading">
-                            <div class="heading-only">
-                                <h1>How to</h1>
-                                <h1>Get Here</h1>
-                            </div>
-                            <span class="rectangle"></span>
-                            <div class="address">
-                                <p>R. Frame de Morá </p>
-                                <p>Floor 6</p>
-                                <p>Rio de Janeiro - Ipanema </p>
-                                <p>Cell: 123-456-7890</p>
-
-                            </div>
-                        </div>
-                        <div class="maps">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386.3906553152804!2d-43.271361465535676!3d-22.876896815049037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c4099af3559%3A0x21bf20c3a6aa337b!2sHotel%20ibis%20Rio%20de%20Janeiro%20Nova%20America!5e0!3m2!1sen!2snp!4v1628676158735!5m2!1sen!2snp"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                        </div>
-                    </div>
-
-
-
-
-                </div>
+                    <p class="end">© Be my guest in Rio. Proudly created with <a href="https://www.wix.com/"
+                            target="blank">Wix.com</a></p>
+                            <script>
+                                if(screen.width>767){
+                                    document.write('<script type="text/javascript" src="js/swup.min.js">< '+'/script>');
+                                }
+                            </script> 
+                            <script defer  type="text/javascript" src="js/transition.js"></script>
+                            <script type="text/javascript" src="js/script.js"></script>
+                </footer>
             </div>
-            <footer class="other-pages-footer">
-                <div class="container">
-                    <div class="contact-us">
-                        <h1>Contact Us</h1>
-                        <span class="rectangle"></span>
-                        <p>Ask us anything! We’re here to answer any questions you have.<br><br>
-                            Email: info@mysite.com</p>
-                    </div>
-                    <div class="follow-us">
-                        <h1>Follow Us</h1>
-                        <span class="rectangle"></span>
-                        <div class="social-media">
-                            <i class="fas fa-plane-departure fa-3x"></i>
-                            <i class="fab fa-facebook-f fa-3x"></i>
-                            <i class="fab fa-instagram fa-3x"></i>
-                        </div>
-                    </div>
-                    <div class="subscription">
-                        <h1>Subscribe for Updates & Offers</h1>
-                        <span class="rectangle"></span>
-                        <form class="form">
-                            <input class="email" type="email" pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{3,}$"
-                                placeholder="Enter your email here*" required>
-                            <input type="submit" value="Subscribe Now" class="subscribe-btn">
-                        </form>
-                    </div>
-                </div>
-                <p class="end">© Be my guest in Rio. Proudly created with <a href="https://www.wix.com/"
-                        target="blank">Wix.com</a></p>
-                        <script type="text/javascript" src="js/script.js"></script>
-            </footer>
         </div>
-
-    </div>
+    </main>
 </body>
 
 </html>
