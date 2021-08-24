@@ -8,6 +8,10 @@ body{
     background-color:#e5ebed;
     overflow-x: hidden;
 }
+.body-overflow-y{
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
 .rectangle{
     display: inline-block;
     width:35px;
@@ -23,6 +27,7 @@ body{
 html.is-animating .transition-fade{
     opacity:1;
     transform:translateX(100%);
+    transition: opacity 35ms;
 }
 html.is-leaving .transition-fade{
     opacity:0;
@@ -64,9 +69,9 @@ html{
 }
 .bar {
     display: block;
-    width: 40px;
-    height: 6px;
-    margin: 6px auto;
+    width: 35px;
+    height: 5px;
+    margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #6aa3a2;
@@ -99,7 +104,7 @@ header{
 }
 .navbar .nav-items{
     font-family: 'Raleway', sans-serif;
-    font-size:1.6rem;
+    font-size:1.7rem;
     display:flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -115,6 +120,7 @@ header{
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
+    line-height:3.5rem;
 }
 .navbar::after{
     content:'';
@@ -124,12 +130,13 @@ header{
 .nav-item-book{
     width:20%;
     text-align: right;
+    padding-top:1rem;
 }
 .book{
     border:1px solid #868686;
     background-color:#868686;
-    padding:4px 37px 4px 37px;
-    font-size:1.6rem;
+    padding:7px 37px 6px 37px;
+    font-size:1.65rem;
     font-weight: 400;
     cursor:pointer;
     color:#f5f5f5;
@@ -209,7 +216,7 @@ input {
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 5px;
-    border-radius:5px;
+    border-radius:3px;
     width:60%;
 }
 #apartment-room-arrow{
@@ -612,7 +619,7 @@ text-align: center;
 }
 .our-rooms-heading h1{
     color:#878787;
-    font-size:2.7rem;
+    font-size:2.5rem;
     font-weight:400;
     margin-bottom:1rem;
 }
@@ -623,31 +630,28 @@ text-align: center;
 .apartment-ip::placeholder{
     opacity:1;
     font-size:15px;
-    /* font-weight: 300; */
+    font-weight: 500;
 }
 .apartment-ip::-webkit-input-placeholder{
     opacity:1;
     font-size:15px;
-    /* font-weight: 300; */
+    font-weight: 500;
     color:black;
 }
-.apartment-ip::-webkit-input-placeholder {
-    opacity:1;
-    font-size:15px;
-    /* font-weight: 300; */
-    color:black;
-}
+
 
 .apartment-ip::-moz-placeholder {
     opacity:1;
     font-size:15px;
     color:black;
+    font-weight: 400;
 }
 
 .apartment-ip::-ms-placeholder {
     opacity:1;
     font-size:15px;
     color:black;
+    font-weight:400;
 }
  input[type="date"]::placeholder{
     color:black;
@@ -668,6 +672,7 @@ text-align: center;
 }
 .room-pic{
     width:30%;
+    height:185px;
     position:relative;
     cursor:pointer;
     overflow:hidden;
@@ -705,8 +710,8 @@ text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 .room-spec a{
-    font-size:22px;
-    font-weight:600;
+    font-size:21px;
+    font-weight:700;
     color:#868686;
     margin-bottom: 2rem;
     margin-left:1rem;
@@ -748,7 +753,7 @@ text-align: center;
     padding-top:4rem;
 }
 .room-prices h1{
-    font-size:3.5rem;
+    font-size:3.7rem;
     font-weight:400;
     margin-bottom:3rem;
 }
@@ -774,22 +779,21 @@ text-align: center;
 }
  .amenity .tooltip{
     display:none;
-    font-size:10px;
+    font-size:11px;
     font-family: 'Raleway', sans-serif;
-    font-weight:100;
-    color:transparent;
+    font-weight:500;
+    color:black;
     text-align: center;
     padding: 5px 5px;
     position: absolute;
     bottom: 32px;
     z-index: 1; 
     letter-spacing: 1px;
-    -webkit-text-stroke: 1px #868686;
+    -webkit-text-stroke: aliceblue;
+    border:1px solid #e5ebed;
 }
 .amenity :hover .tooltip{
-    color: black;
     display:block;
-    border:1px solid #e5ebed;
 }
 .qualities .amenity-seemore {
     color:#6aa3a2;
@@ -962,12 +966,12 @@ text-align: center;
 }
 .img-n-spec{
     float:left;
-    width:75%;
+    width:74%;
 }
 .booking-form{
-    width:25%;
+    width:26%;
     float:right;
-    padding:3rem 0 1rem 0;
+    padding:3rem 0.4rem 1rem 0.4rem;
     border:1px solid #e5ebed;
 }
 .booking-form-about{
@@ -1114,6 +1118,15 @@ text-align: center;
     width:100%;
     height:140px;
     resize:none;
+}
+.form-name:hover{
+    background-color:#cccccc;
+}
+.form-email:hover{
+    background-color:#cccccc;
+}
+.form-message:hover{
+    background-color:#cccccc;
 }
 .form-submit{
     margin-top:5px;

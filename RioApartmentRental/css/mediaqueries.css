@@ -68,12 +68,18 @@
     .from-2nd-page-absolute-position .container-for-left-right-margin{
         margin:0 2rem !important;
     }
+    .room-pic{
+        height:100%;
+    }
     .room-prices{
         padding-top:2rem;
         margin-top:auto;
+        margin-bottom: auto;
     }
     .room-spec{
         padding:1rem 1.2rem 0 1.2rem;
+        margin-top:auto;
+        margin-bottom:auto;
     }
     .each-room-spec p{
         font-size:15px;
@@ -135,7 +141,7 @@
     .nav-item-book{
         width:13%;
         order:-1;
-        margin-top:2rem;
+        margin-top:0rem;
         margin-right: auto;
     }
     .navbar{
@@ -180,16 +186,16 @@
         right: 3rem; 
         border:1px solid white; 
         background-color:white; 
-        width: 57px;
-        height: 48px;
-        border-radius: 8px; 
-        padding:2px 2px 0px 2px; 
+        width: 55px;
+        height: 46px;
+        border-radius: 6px; 
+        padding:5px 2px 0px 2px; 
     }
     .hamburger.activelink .bar:nth-child(2) {
         opacity: 0;
     }
     .hamburger.activelink .bar:nth-child(1) {
-        transform: translateY(17px) rotate(45deg);
+        transform: translateY(14px) rotate(45deg);
     }
     .hamburger.activelink .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
@@ -604,8 +610,9 @@
     .nav-item-book{
         width:13%;
         order:-1;
-        margin-top:2rem;
+        margin-top:1rem;
         margin-right: auto;
+        padding-top:0;
     }
     .navbar{
         padding:3rem 2rem 0 2rem;
@@ -649,16 +656,16 @@
         right: 2rem; 
         border:1px solid white; 
         background-color:white; 
-        width: 57px;
-        height: 48px;
-        border-radius: 8px; 
-        padding:2px 2px 0px 2px; 
+        width: 55px;
+        height: 46px;
+        border-radius: 5px; 
+        padding:5px 2px 0px 2px; 
     }
     .hamburger.activelink .bar:nth-child(2) {
         opacity: 0;
     }
     .hamburger.activelink .bar:nth-child(1) {
-        transform: translateY(17px) rotate(45deg);
+        transform: translateY(13px) rotate(45deg);
     }
     .hamburger.activelink .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
@@ -1162,8 +1169,8 @@
     }
     .nav-item-book{
         order:-1;
-        
-        margin-top:2rem;
+        padding-top:0;
+        margin-top:1rem;
         float: left;
     }
     .navbar{
@@ -1207,10 +1214,10 @@
         right: 2rem; 
         border:1px solid white; 
         background-color:white; 
-        width: 57px;
-        height: 48px;
-        border-radius: 8px; 
-        padding:2px 2px 0px 2px; 
+        width: 55px;
+        height: 46px;
+        border-radius: 6px; 
+        padding:5px 2px 0px 2px; 
     }
 
     .hamburger.activelink .bar:nth-child(2) {
@@ -1218,7 +1225,7 @@
     }
 
     .hamburger.activelink .bar:nth-child(1) {
-        transform: translateY(17px) rotate(45deg);
+        transform: translateY(14px) rotate(45deg);
     }
 
     .hamburger.activelink .bar:nth-child(3) {

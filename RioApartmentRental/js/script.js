@@ -17,11 +17,15 @@ function increment() {
 //  Hamburger Menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".links");
+const body = document.querySelector('body');
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("activelink");
     navMenu.classList.toggle("activelink");
+    body.classList.toggle("body-overflow-y");
+
+    
 }
 
 const navLink = document.querySelectorAll(".links");
@@ -120,5 +124,4 @@ function amenity_more(){
 
     }
 }  
-
 
