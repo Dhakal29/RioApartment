@@ -153,6 +153,7 @@ header{
 }
 .nav-items .nav-item{
     text-transform:capitalize;
+    padding-top:3px;
 }
 .nav-items .nav-item a:hover{
     color:rgb(54, 52, 52);
